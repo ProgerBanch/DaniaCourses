@@ -1,17 +1,17 @@
 #include <stdio.h>
 
-void CapitalSymbol(char*);
+void CapitalSymbol(char *);
 
 int main() {
-char sym;
-scanf ("%c", &sym);
+    char sym;
+    scanf("%c", &sym);
 
-CapitalSymbol(&sym);
+    CapitalSymbol(&sym);
 
-printf ("%c\n", sym);
-return 0;
+    printf("%c\n", sym);
+    return 0;
 }
 
-void CapitalSymbol(char* x) {
-*x-='a'-'A';
+void CapitalSymbol(char *x) {
+    *x -= 'a' - 'A';
 }
